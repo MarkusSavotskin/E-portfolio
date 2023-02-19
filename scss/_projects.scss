@@ -1,0 +1,54 @@
+// PROJECTS
+
+#projects {
+    overflow: hidden;
+}
+
+#showcase {
+    display: grid;
+    grid-template-columns: repeat(0, 0);
+    grid-template-columns: subgrid;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100%;
+    padding: 0 2rem;
+}
+
+.project {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    padding: 2rem 0rem;
+    margin: 0 1rem;
+    color: set-text-color($primary-color);
+    margin: auto;
+}
+
+.project img {
+    @include transition-ease;
+}
+
+.project p {
+    padding: 0 1.5rem;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 75%;
+    margin: auto;
+    border: solid 5px;
+    border-radius: 10px;
+}
+
+.project h3 {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.project p {
+    font-size: 1.5rem;
+}

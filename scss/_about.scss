@@ -1,0 +1,14 @@
+// ABOUT
+
+#about p {
+    color: set-text-color($primary-color);
+    padding: 2rem;
+    font-size: 1.5rem;
+    @include transition-ease;
+}
+
+#about .about-icon {
+    height: 150px;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+}

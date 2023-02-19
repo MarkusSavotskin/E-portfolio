@@ -1,0 +1,94 @@
+// PAGE RESPONSIVENESS
+
+// mobile
+@include media-md {
+
+    .menu-btn {
+        visibility: hidden;
+    }
+
+    .nav {
+        visibility: visible;
+    }
+
+    .menu-nav {
+        display: flex;
+        flex-direction: row;
+        transform: translateY(0);
+        height: 100%;
+        justify-content: center;
+        margin: auto;
+        background-color: $primary-color-opacity;
+    }
+
+    .nav-item {
+        display: inline;
+        padding-right: 2rem;
+        transform: translateX(0vw);
+    }
+
+    .nav-link {
+        font-size: 2rem;
+        padding: 0rem 1rem 0rem 0rem;
+    }
+
+    .logo {
+        height: 50%;
+        width: 50%;
+    }
+
+    .underline {
+        width: 100%;
+    }
+
+    .heading h1 {
+        padding-top: 6rem;
+    }
+
+    .heading h3 {
+        font-size: 3rem;
+    }
+
+    #about p {
+        font-size: 2rem;
+    }
+
+    .skill {
+        flex-flow: row;
+        padding: 0;
+    }
+
+    #showcase {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contacts {
+        flex-flow: row;
+    }
+
+    #contact p {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 70%;
+    }
+
+}
+
+// tablet
+@include media-lg {}
+
+// desktop
+@include media-xl {
+
+    .underline {
+        width: 60%;
+    }
+
+    #showcase {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}

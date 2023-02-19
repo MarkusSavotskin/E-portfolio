@@ -1,0 +1,116 @@
+// SKILLS
+
+#graph {
+    padding-top: 2rem;
+}
+
+#graph,
+.skill {
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 1rem;
+    margin: auto;
+    align-items: center;
+    @include transition-ease;
+}
+
+.skill:hover {
+    transform: scale(1.03);
+}
+
+.skill-logo {
+    display: flex;
+    width: 75%;
+    height: 75%;
+    padding: 1rem;
+    margin: auto;
+}
+
+.skillbar {
+    display: flex;
+    width: 50%;
+    max-width: 60%;
+    background-color: #fff;
+    height: 2rem;
+    border-radius: 10px;
+    padding: 0.1rem;
+    float: right;
+}
+
+// skils progress
+#html-progress {
+    width: 70%;
+    height: 99%;
+    background-color: #E44D26;
+    border-radius: 10px;
+}
+
+#css-progress {
+    width: 70%;
+    height: 99%;
+    background-color: #264DE4;
+    border-radius: 10px;
+}
+
+#javascript-progress {
+    width: 70%;
+    height: 99%;
+    background-color: #D6BA32;
+    border-radius: 10px;
+}
+
+#python-progress {
+    width: 40%;
+    height: 99%;
+    background-color: #387EB8;
+    border-radius: 10px;
+}
+
+#java-progress {
+    width: 40%;
+    height: 99%;
+    background-color: #E76F00;
+    border-radius: 10px;
+}
+
+#wordpress-progress {
+    width: 60%;
+    height: 99%;
+    background-color: #464646;
+    border-radius: 10px;
+}
+
+#corel-progress {
+    width: 50%;
+    height: 99%;
+    background-color: #00983E;
+    border-radius: 10px;
+}
+
+#mysql-progress {
+    width: 60%;
+    height: 99%;
+    background-color: #177591;
+    border-radius: 10px;
+}
+
+#react-progress {
+    width: 50%;
+    height: 99%;
+    background-color: #00D8FF;
+    border-radius: 10px;
+}
+
+.level {
+    padding: 0.3rem 1rem;
+    float: right;
+    color: set-text-color($primary-color);
+}

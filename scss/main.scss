@@ -1,0 +1,182 @@
+// MAIN
+
+@import "config", "menu", "about", "skills", "projects", "contact", "responsive";
+
+// CONTENT BASIC
+
+// colors and backgrounds
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: $primary-color;
+    background-image: url("../img/asfalt-light.png");
+}
+
+.bg-primary {
+    background: $primary-color;
+}
+
+.text-secondary {
+    color: $secondary-color;
+}
+
+.primary-font {
+    font-family: "cooper";
+}
+
+.secondary-font {
+    font-family: "Righteous";
+    font-weight: 400;
+}
+
+.content-bg {
+    background-color: $primary-color-opacity;
+    border-radius: 5%;
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 1rem;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+  }
+  
+  .reveal.active {
+    opacity: 1;
+  }
+
+  .fade-in {
+    @include fade-in;
+  }
+
+// text
+h1 {
+    color: set-text-color($primary-color);
+    font-size: 4rem;
+    padding-top: 2rem;
+}
+
+h3 {
+    color: set-text-color($primary-color);
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 2rem;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.underline {
+    background-color: #fff;
+    border-radius: 10px;
+    height: 0.3rem;
+    width: 70%;
+    margin: auto;
+}
+
+.container {
+    margin: auto;
+    max-width: 1600px;
+    padding: 14px 28px;
+    overflow: auto;
+    height: 100%;
+    @include transition-ease;
+}
+
+// alignment
+.m-auto {
+    margin: auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+// links
+a {
+    color: #fff;
+    text-decoration: none;
+    @include transition-ease;
+}
+
+a:hover {
+    color: #BD3DBF;
+}
+
+// button
+.btn {
+    display: inline-block;
+    padding: 1rem 4rem;
+    margin: 2rem;
+    border: none;
+    border-radius: 10px;
+    background: $secondary-color;
+    color: $primary-color;
+    font-size: 1.5rem;
+    @include transition-ease;
+}
+
+.btn:hover {
+    color: #fff;
+    transform: scale(1.1);
+    background-color: darken($color: $secondary-color, $amount: 10);
+    cursor: pointer;
+}
+
+//FOOTER
+
+footer {
+    color: #fff;
+    background-color: $primary-color-opacity;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+// social icons
+.social-icons {
+    text-align: center;
+}
+
+.social-icon {
+    padding: 1rem;
+    @include transition-ease;
+}
+
+//OTHER
+
+// scrollbar
+// width 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+// track
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+// handle
+::-webkit-scrollbar-thumb {
+    background: $secondary-color;
+    border-radius: 10px;
+}
+
+// handle on hover
+::-webkit-scrollbar-thumb:hover {
+    background: darken($color: $secondary-color, $amount: 10);
+}
